@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Row,Col,Container, Button} from 'react-bootstrap'
+import {Row,Col,Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 
@@ -35,7 +35,7 @@ export default class PersonList extends Component {
                                 <Container>
                                     <Row>
                                         <Col  className="mt-5">
-                                            <Row><img style={{ borderRadius:'50%', width:'200px'}} src={person.picture.large}/></Row>
+                                            <Row><img style={{ borderRadius:'50%', width:'200px'}} src={person.picture.large} alt='person photos'/></Row>
                                         </Col>
                                         <Col >
                                             <Row className="mb-2">User Name: {person.login.username}</Row>
